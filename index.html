@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer Tryout Signup</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Seattle Soccer Camp</h1>
+    </header>
+    <main>
+      <h2>Signup Form</h2>
+
+      <form>
+        <label for="first-last-name">First and Last name</label>
+        <br />
+        <input type="text" name="first-last-name" id="first-last-name" />
+
+        <br />
+        <label for="age">Age</label>
+        <br />
+        <input type="number" name="age" id="age" />
+
+        <br />
+        <label for="field-position">Field Position</label>
+        <br />
+        <select name="field-position" id="field-position">
+          <option value="offense">Offense</option>
+          <option value="defense">Defense</option>
+        </select>
+        <br />
+        <p for="uniform">Uniform</p>
+
+        <input type="checkbox" name="jersey" id="jersey" />
+        <label for="jersey">Jersey</label>
+        <br />
+        <input type="checkbox" name="gloves" id="gloves" />
+        <label for="gloves">Gloves</label>
+        <br />
+        <input type="checkbox" name="cleats" id="cleats" />
+        <label for="cleats">Cleats</label>
+
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <table>
+        <tr>
+          <th>Player Name</th>
+          <th>Age</th>
+          <th>Field Postion</th>
+          <th>Uniform Needs</th>
+        </tr>
+
+        <tr>
+          <td>John</td>
+          <td>15</td>
+          <td>Defense</td>
+          <td>Cleats</td>
+        </tr>
+
+        <tr>
+          <td>Susan</td>
+          <td>16</td>
+          <td>Offense</td>
+          <td>Jersey, Cleats</td>
+        </tr>
+
+        <tr>
+          <td>Christy</td>
+          <td>13</td>
+          <td>Defense</td>
+          <td>Jersey, Cleats, Gloves</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p>©March 2025 cohort</p>
+    </footer>
+  </body>
+</html>
